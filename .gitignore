@@ -1,1 +1,47 @@
+# Data files
 data/raw/
+data/processed/
+data/features/
+*.csv
+*.zip
+
+# Model files
+models/*.pkl
+models/*.pt
+models/*.pth
+models/*.joblib
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+fraud-shield/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Credentials
+.kaggle/
+kaggle.json
+*.json
+.env
+
+# Analysis Notes (private)
+TEMPORAL_ANALYSIS_INSIGHTS.md
+
+# OS
+.DS_Store
+Thumbs.db
