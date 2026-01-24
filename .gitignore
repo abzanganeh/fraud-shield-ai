@@ -25,6 +25,9 @@ fraud-shield/
 # Jupyter
 .ipynb_checkpoints/
 *.ipynb
+# Exception: Track notebooks in notebooks/ directory
+!notebooks/*.ipynb
+!local_notebooks/*.ipynb
 
 # IDE
 .vscode/
