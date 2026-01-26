@@ -29,3 +29,6 @@ jupyter==1.0.0
 ipykernel==6.29.0
 tqdm==4.66.0
 python-dotenv==1.0.0
+
+# NOTE: numba and llvmlite should be installed via conda:
+# conda install -c conda-forge numba llvmlite -y

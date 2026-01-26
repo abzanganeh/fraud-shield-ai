@@ -1,0 +1,30 @@
+name: fraud-shield
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - numba
+  - llvmlite
+  - pip
+  - pip:
+    - pandas==2.2.0
+    - numpy==1.26.0
+    - scikit-learn==1.4.0
+    - xgboost==2.0.3
+    - lightgbm==4.3.0
+    - imbalanced-learn==0.12.0
+    - pyspark==3.5.0
+    - torch==2.2.0
+    - torchvision==0.17.0
+    - torchaudio==2.2.0
+    - matplotlib==3.8.0
+    - seaborn==0.13.0
+    - plotly==5.18.0
+    - shap==0.44.0
+    - streamlit==1.31.0
+    - gradio==4.16.0
+    - jupyter==1.0.0
+    - ipykernel==6.29.0
+    - tqdm==4.66.0
+    - python-dotenv==1.0.0

@@ -45,6 +45,9 @@ kaggle.json
 # Analysis Notes (private)
 TEMPORAL_ANALYSIS_INSIGHTS.md
 
+# Local documentation (not for GitHub)
+local_docs/
+
 # OS
 .DS_Store
 Thumbs.db
