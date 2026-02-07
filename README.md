@@ -17,7 +17,7 @@ Fraud detection pipeline: EDA, preprocessing, feature engineering, and modeling 
 3. **Data**  
    Place `fraudTrain.csv` and (if needed) `uszips.csv` in `data/input/`.
 4. **Run**  
-   From project root: open `local_notebooks/01-local-fraud-detection-eda.ipynb`, select kernel `fraud-shield`, run all. Then run `02-local-preprocessing.ipynb`, then `03-local-feature-engineering.ipynb` as needed.
+   From project root: open `local_notebooks/01-local-fraud-detection-eda.ipynb`, select kernel `fraud-shield`, run all. Then run `02-local-preprocessing.ipynb` (loads Section 8 checkpoint, engineers 30 leak-free features), then 04-07 for models.
 
 ## How to run (detail)
 
@@ -32,7 +32,7 @@ Fraud detection pipeline: EDA, preprocessing, feature engineering, and modeling 
 - **Jupyter:** `jupyter notebook` or `jupyter lab` from project root; open `local_notebooks/01-local-fraud-detection-eda.ipynb`.
 - **VS Code / Cursor:** Open the notebook, choose kernel `fraud-shield`, run cells in order.
 
-Run notebooks in order: **01** (EDA + checkpoints) → **02** (preprocessing) → **03** (feature engineering) → 04–07 (models).
+Run notebooks in order: **01** (EDA + checkpoints) → **02** (preprocessing + feature engineering, 30 features) → 04–07 (models).
 
 ### Troubleshooting
 
