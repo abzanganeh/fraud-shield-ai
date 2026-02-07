@@ -1,0 +1,1 @@
+{"class":"org.apache.spark.ml.feature.StringIndexerModel","timestamp":1770420482987,"sparkVersion":"3.5.0","uid":"StringIndexer_6d36216d2605","paramMap":{"inputCol":"card_age_bin","outputCol":"card_age_bin_indexed","handleInvalid":"keep"},"defaultParamMap":{"stringOrderType":"frequencyDesc","outputCol":"StringIndexer_6d36216d2605__output","handleInvalid":"error"}}
