@@ -24,6 +24,9 @@ shap==0.44.0
 streamlit==1.31.0
 gradio==4.16.0
 
+# Hyperparameter Tuning
+optuna==4.7.0
+
 # Utilities
 jupyter==1.0.0
 ipykernel==6.29.0
