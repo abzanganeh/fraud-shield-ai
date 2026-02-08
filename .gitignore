@@ -2,8 +2,10 @@
 data/raw/
 data/processed/
 data/features/
+data/checkpoints/
 *.csv
 *.zip
+*.parquet
 
 # Model files
 models/*.pkl
