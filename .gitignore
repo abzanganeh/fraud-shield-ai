@@ -12,6 +12,7 @@ models/*.pkl
 models/*.pt
 models/*.pth
 models/*.joblib
+models/spark_preprocessor/
 
 # Python
 __pycache__/
@@ -27,9 +28,10 @@ fraud-shield/
 # Jupyter
 .ipynb_checkpoints/
 *.ipynb
-# Exception: Track notebooks in notebooks/ directory
-!notebooks/*.ipynb
+# Exception: Track notebooks in notebook directories
+!kaggle_notebooks/*.ipynb
 !local_notebooks/*.ipynb
+!colab_notebooks/*.ipynb
 
 # IDE
 .vscode/

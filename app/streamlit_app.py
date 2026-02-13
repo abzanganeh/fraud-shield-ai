@@ -354,6 +354,30 @@ def main() -> None:
                 file_name="fraud_predictions.csv",
                 mime="text/csv",
             )
+
+            with st.expander("Report feedback"):
+                st.caption("Report false positives or negatives to improve the model.")
+                feedback_type = st.radio(
+                    "Feedback type",
+                    ["False positive (flagged but legitimate)", "False negative (cleared but fraud)", "Other"],
+                    key="feedback_type",
+                )
+                feedback_text = st.text_area("Details (optional)", key="feedback_text")
+                if st.button("Submit feedback"):
+                    feedback_path = RESULTS_DIR / "feedback_log.jsonl"
+                    feedback_path.parent.mkdir(parents=True, exist_ok=True)
+                    import json
+                    from datetime import datetime
+                    entry = {
+                        "timestamp": datetime.utcnow().isoformat(),
+                        "type": feedback_type,
+                        "details": feedback_text,
+                        "n_flagged": int(results["is_flagged"].sum()),
+                        "n_total": len(results),
+                    }
+                    with open(feedback_path, "a") as f:
+                        f.write(json.dumps(entry) + "\n")
+                    st.success("Feedback recorded.")
         else:
             st.info(
                 "Upload a raw transaction CSV to start. "
