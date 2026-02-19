@@ -15,6 +15,8 @@ See [PLAN.md](PLAN.md) for rubric alignment and gap analysis.
 
 **Optional:** `03-local-feature-engineering.ipynb` – feature importance analysis (not required for the pipeline).
 
+**For app timezone accuracy:** After NB01, run `scripts/export_timezone_grid.py` to produce `models/timezone_grid.pkl`. The Streamlit app uses this for merchant-local temporal features; without it, the app falls back to UTC.
+
 ## Two-Stage System (NB07)
 
 - **Stage 1:** High-recall gate (flags ~0.5% of transactions)

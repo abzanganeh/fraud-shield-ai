@@ -97,3 +97,4 @@ Optional: 03-feature-engineering.ipynb
 1. [x] **README:** Add web app section and architecture overview
 2. [x] **Architecture diagram:** Added to README
 3. [x] **App feedback:** Added to Streamlit app (Report feedback expander)
+4. [ ] **App timezone:** Wire SingleRecordTimezoneConverter so app uses merchant-local time (see `local_docs/TIMEZONE_PIPELINE_WIRING_PLAN.md`)

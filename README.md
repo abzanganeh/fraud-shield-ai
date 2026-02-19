@@ -81,11 +81,11 @@ Features: CSV upload, automatic feature engineering, two-stage risk tiers (Auto-
 
 ## Project layout
 
-- `app/` – Streamlit web app (`streamlit_app.py`), real-time fraud detection.
+- `app/` – Streamlit web app (`streamlit_app.py`), real-time fraud detection. For timezone-accurate temporal features (hour, day_of_week), run `scripts/export_timezone_grid.py` after EDA to produce `models/timezone_grid.pkl`; otherwise the app falls back to UTC.
 - `local_notebooks/` – EDA, preprocessing, feature engineering, models (local run).
 - `colab_notebooks/` – Google Colab versions (Drive mount).
 - `kaggle_notebooks/` – Kaggle-oriented versions (paths differ).
-- `scripts/` – Shared code (e.g. `timezone_pipeline.py`).
+- `scripts/` – Shared code (e.g. `timezone_pipeline.py`, `export_timezone_grid.py` for app timezone support).
 - `data/checkpoints/` – Parquet checkpoints from EDA/preprocessing (do not commit large data).
 - `local_docs/` – Design doc, TODOs (local only; see `.gitignore`).
 

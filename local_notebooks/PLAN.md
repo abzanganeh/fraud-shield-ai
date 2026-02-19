@@ -82,11 +82,12 @@ Plan to align the project with the Excellent (40 points) criteria.
 ## Run Order (Local)
 
 1. 01-local-fraud-detection-eda.ipynb
-2. 02-local-preprocessing.ipynb
-3. 04-local-supervised-models.ipynb
-4. 05-local-deep-learning.ipynb
-5. 06-local-transformers.ipynb
-6. 07-local-hybrid-framework.ipynb
+2. (Optional) `scripts/export_timezone_grid.py` — for app timezone accuracy
+3. 02-local-preprocessing.ipynb
+4. 04-local-supervised-models.ipynb
+5. 05-local-deep-learning.ipynb
+6. 06-local-transformers.ipynb
+7. 07-local-hybrid-framework.ipynb
 
 Optional: 03-local-feature-engineering.ipynb
 
@@ -97,3 +98,4 @@ Optional: 03-local-feature-engineering.ipynb
 1. [x] **README:** Add web app section and architecture overview
 2. [x] **Architecture diagram:** Added to README
 3. [x] **App feedback:** Added to Streamlit app (Report feedback expander)
+4. [ ] **App timezone:** Wire SingleRecordTimezoneConverter so app uses merchant-local time for temporal features (see `local_docs/TIMEZONE_PIPELINE_WIRING_PLAN.md`)
